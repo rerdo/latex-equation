@@ -7,12 +7,13 @@
 class ImageProcessor
 {
     public:
-        // Trim transparent borders, make background fully transparent and return new Pixbuf
+  /* Trim transparent borders, make background fully transparent
+     and return new Pixbuf*/
         Glib::RefPtr<Gdk::Pixbuf> trim_and_make_transparent(
             const Glib::RefPtr<Gdk::Pixbuf>& src_pixbuf
         );
 
-        // save Pixbuf as PNG
+        // save pixbuf as png
         void save_png(
             const Glib::RefPtr<Gdk::Pixbuf>& pixbuf,
             const std::string& filename

@@ -8,10 +8,10 @@ class RootRenderer {
         RootRenderer();
         ~RootRenderer();
 
-        // render latex to a png file and return the path
+// render latex to a png file and return the path
         std::string renderLatex(const std::string& latex);
 
-        // render latex to an svg file with given filename
+// render latex to an svg file with given filename
         std::string renderLatexSvg(const std::string& latex,
                                    const std::string& filename);
 };

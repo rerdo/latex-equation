@@ -8,7 +8,7 @@ Glib::RefPtr<Gdk::Pixbuf> ImageProcessor::trim_and_make_transparent(
     int width = src->get_width(); // image width in pixels
     int height = src->get_height(); // image height in pixels
     int rowstride = src->get_rowstride(); // number of bytes between rows
-    int n_channels = src->get_n_channels(); // number of channels (e.g., 3 for RGB, 4 for RGBA)
+    int n_channels = src->get_n_channels(); // number of channels (3 for RGB, 4 for RGBA)
     guchar* pixels = src->get_pixels(); // pointer to pixel data
 
     // decide background color
