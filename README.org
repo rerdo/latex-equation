@@ -8,21 +8,21 @@
 A bit overkill package for creating *equations* and *bullet points*, suitable for
 PowerPoint, Impress, Inkscape, etc...
 
-I consider it overkill because it uses the [[https://root.cern.ch/][CERN ROOT]] library for [[https://root.cern.ch/doc/master/classTLatex.html][~LaTex~]] expressions,
-or [[https://root.cern.ch/doc/master/classTMathText.html][~MathText~]] for a more tradition form of equations.
+I consider it overkill because it uses the [[https://root.cern.ch/][CERN ROOT]] library for [[https://root.cern.ch/doc/master/classTLatex.html][LaTex]] expressions,
+or [[https://root.cern.ch/doc/master/classTMathText.html][MathText]] for a more tradition form of equations.
 
 I started using ROOT during my graduation, and I always liked producing equations with
 it for projects, reports, and small students presentations.
 
-This package is designed to be easy and ready to use when needed. It also exports to
-~svg~, which is nice to include in figures (e.g., *Inkscape*).
+This package is designed to be easy and ready to use when needed, and it also exports to
+~svg~, which can be included in *Inkscape*.
 
 * Snapshot
 #+ATTR_HTML: :width 600px
 [[file:snapshot.png]]
 
 * Requirements
-+ [[https://root.cern.ch/][CERN ROOT]] framework
++ [[https://root.cern.ch/][CERN ROOT]]
 + [[https://gtkmm.gnome.org/en/][GTKmm3]] (C++ interface for GTK)
 
 * Installation
@@ -33,7 +33,7 @@ To build the package first make the =build.sh= script executable, and run the ap
   ./build.sh
 #+END_SRC
 
-If the script was executed without error, you should be able to launch it as:
+If the script is executed without error, you can launch it as:
 
 #+BEGIN_SRC bash
   ./latex-equation
@@ -50,6 +50,4 @@ And run:
 #+BEGIN_SRC bash
   latex-equation
 #+END_SRC
-
-
 
